@@ -15,13 +15,16 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String title;
-    @ManyToMany
+    private String genre;
+    @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authors = new HashSet<>();
 
-    public Book(String title) {
+    public Book(String title, String genre, Set<Author> authors) {
         this.title = title;
+        this.genre = genre;
+        this.authors = authors;
     }
 
     public Book() {
@@ -49,5 +52,13 @@ public class Book {
 
     public void setAuthors(Set<Author> authors) {
         this.authors = authors;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
