@@ -1,4 +1,4 @@
-package com.tutorial.demo.documents;
+package com.test.demo.document;
 
 import org.apache.solr.client.solrj.beans.Field;
 import org.springframework.data.annotation.Id;

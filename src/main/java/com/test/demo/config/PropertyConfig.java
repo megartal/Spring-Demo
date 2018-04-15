@@ -1,4 +1,4 @@
-package com.tutorial.demo.config;
+package com.test.demo.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

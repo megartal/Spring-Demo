@@ -1,15 +1,14 @@
-package com.tutorial.demo.bootstrap;
+package com.test.demo.bootstrap;
 
-import com.tutorial.demo.model.Author;
-import com.tutorial.demo.model.Book;
-import com.tutorial.demo.repositories.AuthorRepository;
-import com.tutorial.demo.repositories.BookRepository;
+import com.test.demo.model.Book;
+import com.test.demo.repositories.AuthorRepository;
+import com.test.demo.repositories.BookRepository;
+import com.test.demo.model.Author;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 
 /**

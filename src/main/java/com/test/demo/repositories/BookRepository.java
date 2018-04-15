@@ -1,10 +1,13 @@
-package com.tutorial.demo.repositories;
+package com.test.demo.repositories;
 
-import com.tutorial.demo.model.Book;
+import com.test.demo.model.Book;
 import org.springframework.data.repository.CrudRepository;
+
+import java.util.Optional;
 
 /**
  * Created by Tahoe on 4/7/2018.
  */
 public interface BookRepository extends CrudRepository<Book, Integer> {
+    Optional<Book> findByTitle(String title);
 }

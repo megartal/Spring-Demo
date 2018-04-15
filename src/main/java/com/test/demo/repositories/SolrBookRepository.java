@@ -1,7 +1,8 @@
-package com.tutorial.demo.repositories;
+package com.test.demo.repositories;
 
-import com.tutorial.demo.documents.Product;
+import com.test.demo.document.Product;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.solr.repository.SolrCrudRepository;
 
 import java.util.List;

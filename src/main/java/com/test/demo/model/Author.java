@@ -1,4 +1,6 @@
-package com.tutorial.demo.model;
+package com.test.demo.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -17,6 +19,7 @@ public class Author {
     private String firstName;
     private String lastName;
     @ManyToMany(mappedBy = "authors", cascade = {CascadeType.ALL})
+    @JsonIgnore
     private Set<Book> books = new HashSet<>();
 
     public Author(String firstName, String lastName) {

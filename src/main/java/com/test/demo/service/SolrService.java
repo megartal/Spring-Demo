@@ -1,8 +1,6 @@
-package com.tutorial.demo.service;
+package com.test.demo.service;
 
-import com.tutorial.demo.repositories.SolrBookRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.test.demo.repositories.SolrBookRepository;
 import org.springframework.stereotype.Component;
 
 /**

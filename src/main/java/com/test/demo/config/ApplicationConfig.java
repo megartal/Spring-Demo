@@ -1,4 +1,4 @@
-package com.tutorial.demo.config;
+package com.test.demo.config;
 
 import org.apache.solr.client.solrj.SolrClient;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,20 +19,20 @@ import java.io.IOException;
 /**
  * Created by Tahoe on 4/12/2018.
  */
-@Configuration
-@EnableSolrRepositories(
-        basePackages = "com.tutorial.demo.repositories"
-)
-@ComponentScan
-public class ApplicationConfig {
-    @Bean
-    public SolrClient solrClient() throws Exception {
-        EmbeddedSolrServerFactory factory = new EmbeddedSolrServerFactory("classpath:com/acme/solr");
-        return factory.getSolrServer();
-    }
-
-    @Bean
-    public SolrOperations solrTemplate() throws Exception {
-        return new SolrTemplate(solrClient());
-    }
-}
+//@Configuration
+//@EnableSolrRepositories(
+//        basePackages = "com.tutorial.demo.repositories"
+//)
+//@ComponentScan
+//public class ApplicationConfig {
+//    @Bean
+//    public SolrClient solrClient() throws Exception {
+//        EmbeddedSolrServerFactory factory = new EmbeddedSolrServerFactory("classpath:com/acme/solr");
+//        return factory.getSolrServer();
+//    }
+//
+//    @Bean
+//    public SolrOperations solrTemplate() throws Exception {
+//        return new SolrTemplate(solrClient());
+//    }
+//}

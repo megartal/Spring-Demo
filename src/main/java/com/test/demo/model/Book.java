@@ -1,4 +1,6 @@
-package com.tutorial.demo.model;
+package com.test.demo.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -19,12 +21,22 @@ public class Book {
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
+    @JsonIgnore
     private Set<Author> authors = new HashSet<>();
 
     public Book(String title, String genre, Set<Author> authors) {
         this.title = title;
         this.genre = genre;
         this.authors = authors;
+    }
+
+    public Book(String title, String genre) {
+        this.title = title;
+        this.genre = genre;
+    }
+
+    public Book(String title) {
+        this.title = title;
     }
 
     public Book() {
