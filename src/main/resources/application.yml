@@ -1,2 +1,9 @@
-solr:
-    host: "http://localhost:8983/solr/test"
+yamlfile:
+    test: this is test for yaml file
+
+---
+spring:
+    profiles: profile
+
+yamlfile:
+   test: this is a test for yaml file for another properity
