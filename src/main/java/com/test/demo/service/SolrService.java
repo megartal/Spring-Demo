@@ -1,7 +1,10 @@
 package com.test.demo.service;
 
+import com.test.demo.document.Product;
 import com.test.demo.repositories.SolrBookRepository;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * Created by Tahoe on 4/13/2018.
@@ -14,12 +17,8 @@ public class SolrService {
         this.solrBookRepository = solrBookRepository;
     }
 
-    public void getResult(String name){
-        System.out.println(solrBookRepository.findByName(name));
-    }
-
-    public void getAllResults(){
-        System.out.println(solrBookRepository.findAll());
+    public Iterable<Product> getAllResults(){
+        return solrBookRepository.findAll();
     }
 
 }

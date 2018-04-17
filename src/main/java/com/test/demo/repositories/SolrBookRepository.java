@@ -12,5 +12,4 @@ import java.util.List;
  */
 @Primary
 public interface SolrBookRepository extends SolrCrudRepository<Product, String> {
-    List<Product> findByName(String name);
 }

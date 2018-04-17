@@ -7,3 +7,7 @@ spring:
 
 yamlfile:
    test: this is a test for yaml file for another properity
+
+---
+solr:
+    host: "http://192.168.82.165:8983/solr"
