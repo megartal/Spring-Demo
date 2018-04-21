@@ -1,15 +1,15 @@
 package com.test.demo.repositories;
 
 import com.test.demo.document.Product;
-import org.springframework.context.annotation.Primary;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.solr.repository.SolrCrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
- * Created by Tahoe on 4/12/2018.
+ * Created by akbar on 4/12/2018.
  */
-@Primary
+@Repository
 public interface SolrBookRepository extends SolrCrudRepository<Product, String> {
+    public List<Product> findByName(String name);
 }

@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by Tahoe on 4/14/2018.
+ * Created by Akbar on 4/14/2018.
  */
 @Configuration
 public class SolrPropertyConfig {

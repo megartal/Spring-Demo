@@ -9,11 +9,8 @@ import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
-import javax.annotation.Resource;
-import javax.annotation.Resources;
-
 /**
- * Created by Tahoe on 4/13/2018.
+ * Created by Akbar on 4/13/2018.
  */
 @Configuration
 @PropertySources({

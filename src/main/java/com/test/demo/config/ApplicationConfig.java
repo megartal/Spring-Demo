@@ -10,7 +10,7 @@ import org.springframework.data.solr.core.SolrTemplate;
 import org.springframework.data.solr.repository.config.EnableSolrRepositories;
 
 /**
- * Created by Tahoe on 4/12/2018.
+ * Created by Akbar on 4/12/2018.
  */
 @Configuration
 @EnableSolrRepositories(

@@ -1,7 +1,7 @@
-package com.test.demo.controller;
+package com.test.demo.controllers;
 
 import com.test.demo.model.Book;
-import com.test.demo.repositories.BookRepository;
+import com.test.demo.service.BookService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,32 +14,25 @@ import java.util.Optional;
  */
 @RestController
 public class BookRestController {
-    private final BookRepository bookRepository;
+    private final BookService bookService;
 
-    public BookRestController(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    public BookRestController(BookService bookService) {
+        this.bookService = bookService;
     }
 
     @RequestMapping("/book")
     public Optional<Book> getBook(@RequestParam(value = "title", defaultValue = "Great Expectations") String title) {
-        return bookRepository.findByTitle(title);
+        return bookService.findBookByTitle(title);
     }
 
     @RequestMapping("/books")
     public Iterable<Book> getBooks(){
-        return bookRepository.findAll();
+        return bookService.findAllBooks();
     }
 
 
     @RequestMapping("/book/add")
     public String add(@RequestParam(value = "title", required = true) String title, @RequestParam(value = "genre", required = false) String genre){
-        Book book;
-        if (genre == null){
-            book = new Book(title);
-        } else {
-            book = new Book(title, genre);
-        }
-        bookRepository.save(book);
-        return "saved";
+        return bookService.addBook(title, genre);
     }
 }

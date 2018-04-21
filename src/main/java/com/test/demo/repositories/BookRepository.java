@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.Optional;
 
 /**
- * Created by Tahoe on 4/7/2018.
+ * Created by Akbar on 4/7/2018.
  */
 public interface BookRepository extends CrudRepository<Book, Integer> {
     Optional<Book> findByTitle(String title);
