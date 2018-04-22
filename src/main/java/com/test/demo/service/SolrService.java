@@ -11,5 +11,5 @@ import java.util.List;
 public  interface SolrService {
     public List<Product> getResult(String name);
     public Iterable<Product> getAllResults();
-
+    public List<String> getSolrResultsUsingCustomQuery(String name);
 }

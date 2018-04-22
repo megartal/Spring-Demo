@@ -11,3 +11,6 @@ yamlfile:
 ---
 solr:
     host: "http://192.168.82.165:8983/solr"
+
+solr_core_test: "http://192.168.82.165:8983/solr/test"
+

@@ -12,7 +12,14 @@ public class SolrPropertyConfig {
     @Value("${solr.host}")
     private String solrHost;
 
+    @Value("${solr_core_test}")
+    private String solrTestCore;
+
     public String getSolrHost() {
         return solrHost;
+    }
+
+    public String getSolrTestCore() {
+        return solrTestCore;
     }
 }

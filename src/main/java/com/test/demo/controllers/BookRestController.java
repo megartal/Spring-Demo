@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -34,5 +35,10 @@ public class BookRestController {
     @RequestMapping("/book/add")
     public String add(@RequestParam(value = "title", required = true) String title, @RequestParam(value = "genre", required = false) String genre){
         return bookService.addBook(title, genre);
+    }
+
+    @RequestMapping("/book/like")
+    public List<Book> getBookUsingCustomQuery(@RequestParam(value = "title") String title) {
+        return bookService.findBookInCustomQuery(title);
     }
 }

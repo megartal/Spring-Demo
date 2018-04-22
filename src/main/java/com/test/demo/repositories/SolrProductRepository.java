@@ -10,6 +10,6 @@ import java.util.List;
  * Created by akbar on 4/12/2018.
  */
 @Repository
-public interface SolrBookRepository extends SolrCrudRepository<Product, String> {
+public interface SolrProductRepository extends SolrCrudRepository<Product, String>, SolrProductRepositoryCustom {
     public List<Product> findByName(String name);
 }

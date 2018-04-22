@@ -37,7 +37,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
     private void initData() {
         Author charles = new Author("charles", "Dickens");
-        Book greatExpectations = new Book("Great Expectations", "novel", new HashSet<>(Arrays.asList(charles)));
+        Book greatExpectations = new Book("great Expectations", "novel", new HashSet<>(Arrays.asList(charles)));
         charles.getBooks().add(greatExpectations);
         greatExpectations.getAuthors().add(charles);
         bookRepository.save(greatExpectations);

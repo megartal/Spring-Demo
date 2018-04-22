@@ -4,6 +4,7 @@ import com.test.demo.model.Book;
 import com.test.demo.repositories.BookRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -39,5 +40,10 @@ public class BookServiceImpl implements BookService{
         }
         bookRepository.save(book);
         return "saved";
+    }
+
+    @Override
+    public List<Book> findBookInCustomQuery(String title) {
+        return bookRepository.getBookNameLike(title);
     }
 }
