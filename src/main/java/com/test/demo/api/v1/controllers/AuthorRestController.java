@@ -1,4 +1,4 @@
-package com.test.demo.controllers;
+package com.test.demo.api.v1.controllers;
 
 import com.test.demo.model.Author;
 import com.test.demo.repositories.AuthorRepository;

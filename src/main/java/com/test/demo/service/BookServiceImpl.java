@@ -26,6 +26,11 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
+    public Optional<Book> findBookByGenre(String genre) {
+        return bookRepository.findByGenre(genre);
+    }
+
+    @Override
     public Iterable<Book> findAllBooks() {
         return bookRepository.findAll();
     }

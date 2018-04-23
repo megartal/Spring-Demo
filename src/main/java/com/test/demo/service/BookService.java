@@ -11,6 +11,7 @@ import java.util.Optional;
  */
 public interface BookService {
     public Optional<Book> findBookByTitle(String title);
+    public Optional<Book> findBookByGenre(String genre);
     public Iterable<Book> findAllBooks();
     public String addBook(String title, String genre);
     public List<Book> findBookInCustomQuery(String title);

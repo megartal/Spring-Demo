@@ -44,7 +44,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         authorRepository.save(charles);
 
         Author Jane = new Author("Jane", "Austen");
-        Book loveStory = new Book("Pride and Prejudice", "novel", new HashSet<>(Arrays.asList(Jane)));
+        Book loveStory = new Book("Pride and Prejudice", "fiction", new HashSet<>(Arrays.asList(Jane)));
         Jane.getBooks().add(loveStory);
         loveStory.getAuthors().add(Jane);
         bookRepository.save(loveStory);

@@ -1,4 +1,4 @@
-package com.test.demo.controllers;
+package com.test.demo.api.v1.controllers;
 
 import com.test.demo.model.Product;
 import com.test.demo.service.ProductService;

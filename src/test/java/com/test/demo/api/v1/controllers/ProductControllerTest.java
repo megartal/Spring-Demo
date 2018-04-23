@@ -1,4 +1,4 @@
-package com.test.demo.controllers;
+package com.test.demo.api.v1.controllers;
 
 import org.junit.Test;
 
