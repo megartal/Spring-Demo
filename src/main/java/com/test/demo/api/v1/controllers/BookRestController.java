@@ -2,6 +2,7 @@ package com.test.demo.api.v1.controllers;
 
 import com.test.demo.model.Book;
 import com.test.demo.service.BookService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import java.util.Optional;
  */
 @Profile("v1")
 @RestController
+@Slf4j
 @RequestMapping({"/api/v1"})
 public class BookRestController {
     private final BookService bookService;
@@ -26,6 +28,7 @@ public class BookRestController {
 
     @GetMapping(value = "/book", params = {"title"})
     public Optional<Book> getBook(String title) {
+        log.error("trying to find a book by title!");
         return bookService.findBookByTitle(title);
     }
 

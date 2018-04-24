@@ -1,6 +1,8 @@
 package com.test.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -11,6 +13,8 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "book")
+@Getter
+@Setter
 public class Book {
 
     @Id
@@ -40,37 +44,5 @@ public class Book {
     }
 
     public Book() {
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Set<Author> getAuthors() {
-        return authors;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAuthors(Set<Author> authors) {
-        this.authors = authors;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
     }
 }
