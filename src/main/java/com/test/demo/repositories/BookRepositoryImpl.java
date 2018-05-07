@@ -1,6 +1,6 @@
 package com.test.demo.repositories;
 
-import com.test.demo.model.Book;
+import com.test.demo.domain.Book;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

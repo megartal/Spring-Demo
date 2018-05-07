@@ -1,6 +1,6 @@
 package com.test.demo.service;
 
-import com.test.demo.model.Book;
+import com.test.demo.domain.Book;
 import com.test.demo.repositories.BookRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.test.demo.model;
+package com.test.demo.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;

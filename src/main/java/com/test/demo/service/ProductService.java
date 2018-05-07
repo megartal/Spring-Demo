@@ -1,6 +1,6 @@
 package com.test.demo.service;
 
-import com.test.demo.model.Product;
+import com.test.demo.domain.Product;
 
 import java.util.Optional;
 

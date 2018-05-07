@@ -1,6 +1,6 @@
 package com.test.demo.api.v1.controllers;
 
-import com.test.demo.model.Author;
+import com.test.demo.domain.Author;
 import com.test.demo.repositories.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

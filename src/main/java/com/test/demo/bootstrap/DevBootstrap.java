@@ -1,8 +1,8 @@
 package com.test.demo.bootstrap;
 
-import com.test.demo.model.Author;
-import com.test.demo.model.Book;
-import com.test.demo.model.Product;
+import com.test.demo.domain.Author;
+import com.test.demo.domain.Book;
+import com.test.demo.domain.Product;
 import com.test.demo.repositories.AuthorRepository;
 import com.test.demo.repositories.BookRepository;
 import com.test.demo.repositories.ProductRepository;

@@ -1,6 +1,6 @@
 package com.test.demo.repositories;
 
-import com.test.demo.model.Book;
+import com.test.demo.domain.Book;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
