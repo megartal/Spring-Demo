@@ -1,7 +1,8 @@
-package com.test.demo.service;
+package com.test.demo.service.impl;
 
 import com.test.demo.document.Product;
-import com.test.demo.repositories.SolrProductRepository;
+import com.test.demo.repositories.solr.SolrProductRepository;
+import com.test.demo.service.interf.SolrService;
 import org.apache.solr.common.SolrDocument;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.List;
  * Created by Akbar on 4/13/2018.
  */
 @Service
-public class SolrServiceImpl implements SolrService{
+public class SolrServiceImpl implements SolrService {
     private SolrProductRepository solrProductRepository;
 
     public SolrServiceImpl(SolrProductRepository solrProductRepository) {

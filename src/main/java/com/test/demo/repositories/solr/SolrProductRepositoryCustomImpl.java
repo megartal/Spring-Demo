@@ -1,4 +1,4 @@
-package com.test.demo.repositories;
+package com.test.demo.repositories.solr;
 
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;

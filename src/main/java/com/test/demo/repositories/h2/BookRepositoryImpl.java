@@ -1,4 +1,4 @@
-package com.test.demo.repositories;
+package com.test.demo.repositories.h2;
 
 import com.test.demo.domain.Book;
 import org.springframework.stereotype.Repository;

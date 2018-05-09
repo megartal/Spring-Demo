@@ -1,7 +1,8 @@
-package com.test.demo.service;
+package com.test.demo.service.impl;
 
 import com.test.demo.domain.Product;
-import com.test.demo.repositories.ProductRepository;
+import com.test.demo.repositories.h2.ProductRepository;
+import com.test.demo.service.interf.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

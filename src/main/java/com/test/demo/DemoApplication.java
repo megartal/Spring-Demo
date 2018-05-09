@@ -1,8 +1,8 @@
 package com.test.demo;
 
 import com.test.demo.document.Product;
-import com.test.demo.service.SolrService;
-import com.test.demo.service.SolrServiceImpl;
+import com.test.demo.service.impl.SolrServiceImpl;
+import com.test.demo.service.interf.SolrService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +15,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext cnx = SpringApplication.run(DemoApplication.class, args);
 		SolrService solrService = cnx.getBean(SolrServiceImpl.class);
-        System.out.println("results from spring data solr query:");
+        System.out.println("results from spring data solr query njcedjncjdecen:");
         for (Product product : solrService.getResult("The Lightning Thief")) {
             System.out.println(product.getName());
         }

@@ -1,6 +1,7 @@
 package com.test.demo.repositories;
 
 import com.test.demo.domain.Product;
+import com.test.demo.repositories.h2.ProductRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

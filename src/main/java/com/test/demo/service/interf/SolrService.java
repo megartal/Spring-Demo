@@ -1,4 +1,4 @@
-package com.test.demo.service;
+package com.test.demo.service.interf;
 
 import com.test.demo.document.Product;
 

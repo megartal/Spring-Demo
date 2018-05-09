@@ -1,7 +1,7 @@
 package com.test.demo.api.v1.controllers;
 
 import com.test.demo.domain.Product;
-import com.test.demo.service.ProductService;
+import com.test.demo.service.interf.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;

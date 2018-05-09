@@ -1,7 +1,8 @@
-package com.test.demo.service;
+package com.test.demo.service.impl;
 
 import com.test.demo.domain.Book;
-import com.test.demo.repositories.BookRepository;
+import com.test.demo.repositories.h2.BookRepository;
+import com.test.demo.service.interf.BookService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

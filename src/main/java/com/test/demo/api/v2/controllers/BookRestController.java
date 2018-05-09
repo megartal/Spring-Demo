@@ -1,7 +1,7 @@
 package com.test.demo.api.v2.controllers;
 
 import com.test.demo.domain.Book;
-import com.test.demo.service.BookService;
+import com.test.demo.service.interf.BookService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

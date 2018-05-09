@@ -1,4 +1,4 @@
-package com.test.demo.repositories;
+package com.test.demo.repositories.solr;
 
 import com.test.demo.document.Product;
 import org.springframework.data.solr.repository.SolrCrudRepository;
