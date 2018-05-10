@@ -28,7 +28,7 @@ public class BookRestController {
 
     @GetMapping(value = "/book", params = {"title"})
     public Optional<Book> getBook(String title) {
-        log.error("trying to find a book by title!");
+        log.debug("this just for test.");
         return bookService.findBookByTitle(title);
     }
 
