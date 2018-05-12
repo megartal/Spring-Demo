@@ -1,5 +1,6 @@
 package com.test.demo.api.v1.controllers;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -14,6 +15,7 @@ public class ProductControllerTest {
 
     @Test
     public void showProduct() throws Exception {
+        Assert.assertEquals(0,1);
 
     }
 
