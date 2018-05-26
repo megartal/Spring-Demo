@@ -1,4 +1,4 @@
 # Spring-Demo
-This for practicing and learning Spring framework 5
+This is just for practicing and learning Spring framework 5
 
-this is just for circleCI test
+CircleCI test
